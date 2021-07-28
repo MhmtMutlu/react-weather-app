@@ -12,7 +12,7 @@ function WeatherContextProvider({ children }) {
   useEffect(() => {
     axios.get(url)
       .then(response => setWeatherData(response.data))
-  }, [cityName])
+  }, [url])
 
   console.log(weatherData);
   return (
