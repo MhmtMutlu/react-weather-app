@@ -1,0 +1,38 @@
+.weather-card {
+  width: 60%;
+  height: 60%;
+  margin: auto;
+  padding: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #edf2f4;
+}
+
+@mixin padding {
+  padding: 0.5rem;
+}
+
+.left-bar {
+  @include padding;
+}
+
+.right-bar {
+  @include padding;
+}
+
+.left-bar p {
+  @include padding;
+  font-size: 24px;
+}
+
+.right-bar p {
+  @include padding;
+  font-size: 16px;
+}
+
+.svg-box {
+  width: 40%;
+}
