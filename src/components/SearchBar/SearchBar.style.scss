@@ -1,0 +1,27 @@
+.search-bar {
+  width: 50%;
+  margin: auto auto 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar-input {
+  padding: 0.8rem;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  outline: none;
+  color: #edf2f4;
+
+  &:focus {
+    border: 2px solid #edf2f4;
+    background-color: rgba(240, 240, 240, 0.3);
+  }
+
+  &::placeholder {
+    color: rgba(240, 240, 240, 0.8);
+  }
+}

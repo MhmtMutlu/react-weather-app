@@ -4,7 +4,7 @@ import { WeatherContext } from '../context/WeatherContext';
 import './Layout.style.scss';
 
 function Layout({ children }) {
-  const weatherData = useContext(WeatherContext);
+  const { weatherData } = useContext(WeatherContext);
   return (
     <>
     {
