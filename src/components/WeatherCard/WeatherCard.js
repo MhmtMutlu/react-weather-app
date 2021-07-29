@@ -5,7 +5,6 @@ import './WeatherCard.style.scss';
 
 function WeatherCard() {
   const weatherData = useContext(WeatherContext);
-  console.log(weatherData);
   const windSpeed = weatherData.wind.speed && weatherData.wind.speed.toString();
   const removeNumberAfterDot = (value) => {
     return value = value.toString().split(".")[0];

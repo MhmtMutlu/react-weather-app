@@ -2,7 +2,6 @@ import React from 'react'
 
 function WeatherIcons(props) {
   let time = props.time.includes("n") ? "nt_" : "";
-  console.log(time);
   let icon = null;
   switch (props.condition) {
     case "Clear":
