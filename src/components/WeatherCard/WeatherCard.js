@@ -13,12 +13,12 @@ function WeatherCard() {
         weatherData && (
           <div className="weather-card">
             <div className="left-bar">
-              <h1>City: {weatherData.name}</h1>
               <div className="svg-box">
                 <WeatherIcons condition={weatherData.weather[0].main} time={weatherData.weather[0].icon}/>
               </div>
-              <p>Temperature: {weatherData.main.temp}</p>
-              <p>Temperature High-Low: {weatherData.main.temp_max} {weatherData.main.temp_min}</p>
+              <h1>{weatherData.name}</h1>
+              <p>{weatherData.main.temp}°C</p>
+              <p>{weatherData.main.temp_max}°C - {weatherData.main.temp_min}°C</p>
             </div>
             <div className="right-bar">
               <p>Feels like: {weatherData.main.feels_like}</p>

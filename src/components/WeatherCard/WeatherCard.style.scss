@@ -1,5 +1,5 @@
 .weather-card {
-  width: 60%;
+  width: 50%;
   height: 60%;
   margin: auto;
   padding: 2rem;
@@ -23,16 +23,16 @@
   @include padding;
 }
 
-.left-bar p {
+.left-bar p, h1 {
   @include padding;
-  font-size: 24px;
+  font-size: 2rem;
 }
 
 .right-bar p {
   @include padding;
-  font-size: 16px;
+  font-size: 1.5rem;
 }
 
 .svg-box {
-  width: 40%;
+  width: 80%;
 }
