@@ -1,3 +1,4 @@
+import DailyWeather from "./components/DailyWeather/DailyWeather";
 import SearchBar from "./components/SearchBar/SearchBar";
 import WeatherCard from "./components/WeatherCard/WeatherCard";
 import WeatherContextProvider from "./context/WeatherContext";
@@ -9,6 +10,7 @@ function App() {
       <Layout>
         <SearchBar />
         <WeatherCard />
+        <DailyWeather />
       </Layout>
     </WeatherContextProvider>
   );

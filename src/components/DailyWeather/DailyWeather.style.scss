@@ -1,0 +1,16 @@
+.daily-weather-card {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+
+  width: 50%;
+  height: 60%;
+  margin: 1rem auto;
+  padding: 2rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #edf2f4;
+}
