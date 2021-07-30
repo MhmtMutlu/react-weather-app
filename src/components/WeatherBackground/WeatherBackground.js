@@ -12,7 +12,15 @@ function WeatherBackground(props) {
     case "Clouds":
       condition = "cloudy";
       break;
-    case "Atmosphere":
+    case "Mist":
+    case "Smoke":
+    case "Dust":
+    case "Haze":
+    case "Fog":
+    case "Sand":
+    case "Ash":
+    case "Squall":
+    case "Tornado":
       condition = "fog";
       break;
     case "Snow":

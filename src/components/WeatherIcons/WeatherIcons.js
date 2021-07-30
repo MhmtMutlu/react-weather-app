@@ -10,7 +10,15 @@ function WeatherIcons(props) {
     case "Clouds":
       icon = <img src={`/icons/white/svg/${time}cloudy.svg`} alt={props.condition} />;
       break;
-    case "Atmosphere":
+    case "Mist":
+    case "Smoke":
+    case "Dust":
+    case "Haze":
+    case "Fog":
+    case "Sand":
+    case "Ash":
+    case "Squall":
+    case "Tornado":
       icon = <img src={`/icons/white/svg/${time}fog.svg`} alt={props.condition} />;
       break;
     case "Snow":

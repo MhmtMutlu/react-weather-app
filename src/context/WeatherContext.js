@@ -10,8 +10,16 @@ function WeatherContextProvider({ children }) {
   const url = `${BASE_URL}weather?q=${cityName}&units=metric&appid=${process.env.REACT_APP_API_KEY}`;
 
   useEffect(() => {
-    axios.get(url)
-      .then(response => setWeatherData(response.data))
+    
+    const searchTimeout = setTimeout(() => {
+      axios.get(url)
+        .then(response => setWeatherData(response.data))
+    }, 500);
+
+    return () => {
+      clearTimeout(searchTimeout)
+    }
+    
   }, [url]);
 
   const searchCity = (e) => {
