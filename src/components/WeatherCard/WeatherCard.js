@@ -5,9 +5,21 @@ import './WeatherCard.style.scss';
 
 function WeatherCard() {
   const { weatherData } = useContext(WeatherContext);
+
   const windSpeed = weatherData.wind.speed && weatherData.wind.speed.toString();
   const removeNumberAfterDot = (value) => {
     return value = value.toString().split(".")[0];
+  }
+  
+  const calculateWindSpeed = (value) => {
+    if (value) {
+      if (value.length > 3) {
+        return value.slice(0,3);
+      } else {
+        return value;
+      }
+    }
+    return 0;
   }
 
   return (
@@ -59,7 +71,7 @@ function WeatherCard() {
                   </div>
                   <div className="weather-info">
                     <h3>Wind Speed</h3>
-                    <p>{windSpeed.slice(0,3)}</p>
+                    <p>{calculateWindSpeed(windSpeed)}</p>
                   </div>
                 </li>
               </ul>
