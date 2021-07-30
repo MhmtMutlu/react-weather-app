@@ -9,7 +9,6 @@ function WeatherCard() {
   const removeNumberAfterDot = (value) => {
     return value = value.toString().split(".")[0];
   }
-  console.log(weatherData);
 
   return (
     <>
