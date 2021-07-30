@@ -17,7 +17,7 @@ function WeatherContextProvider({ children }) {
     }, 500);
 
     return () => {
-      clearTimeout(searchTimeout)
+      clearTimeout(searchTimeout);
     }
     
   }, [url]);
@@ -33,4 +33,4 @@ function WeatherContextProvider({ children }) {
   )
 }
 
-export default WeatherContextProvider
+export default WeatherContextProvider;
