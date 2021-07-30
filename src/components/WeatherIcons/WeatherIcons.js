@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function WeatherIcons(props) {
   let time = props.time.includes("n") ? "nt_" : "";
@@ -36,7 +36,7 @@ function WeatherIcons(props) {
     default:
       break;
   }
-  return icon
+  return icon;
 }
 
-export default WeatherIcons
+export default WeatherIcons;

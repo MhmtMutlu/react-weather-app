@@ -46,7 +46,7 @@ function WeatherBackground(props) {
     image = <div className="background" style={divStyle} />;
   }
   
-  return image
+  return image;
 }
 
 export default WeatherBackground;
