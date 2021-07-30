@@ -21,8 +21,8 @@ function WeatherCard() {
                 <WeatherIcons condition={weatherData.weather[0].main} time={weatherData.weather[0].icon}/>
               </div>
               <h2 className="city-name">{weatherData.name}</h2>
-              <p>{removeNumberAfterDot(weatherData.main.temp)} °C</p>
-              <p>
+              <p className="current-temp">{removeNumberAfterDot(weatherData.main.temp)} °C</p>
+              <p className="max-min-temp">
                 {removeNumberAfterDot(weatherData.main.temp_max)} °C 
                 - {removeNumberAfterDot(weatherData.main.temp_min)} °C</p>
             </div>

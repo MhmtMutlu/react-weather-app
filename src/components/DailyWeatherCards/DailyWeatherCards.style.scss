@@ -3,9 +3,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+
+  &:hover {
+    background-color: rgba($color: #fff, $alpha: 0.3);
+    border-radius: 10px;
+  }
 }
 
 .svg-box {
-  width: 40px;
-  height: 40px;
+  width: 100px;
+  height: 100px;
+}
+
+.temp-data {
+  font-size: 1.2rem;
 }

@@ -29,7 +29,15 @@
 
 .left-bar p {
   @include padding;
+}
+
+.current-temp {
   font-size: 2rem;
+}
+
+.max-min-temp {
+  font-size: 1.5rem;
+  color: #2885B5;
 }
 
 .left-bar-svg-box {
